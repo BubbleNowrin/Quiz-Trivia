@@ -1,6 +1,4 @@
 import React from 'react';
-import download from '../../images/download.png';
-import header from '../../images/header.webp';
 import thinking from '../../images/thinking.png'
 
 const Header = () => {

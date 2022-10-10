@@ -5,6 +5,7 @@ import Main from '../src/Layouts/Main'
 import Quizzes from './Components/Quizzes/Quizzes';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
+import Header from './Components/Header/Header';
 
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
+        // {
+        //   path: '/',
+        //   element: <Header></Header>
+        // },
         {
           path: '/',
           loader: async () => {
@@ -31,6 +36,7 @@ function App() {
         }
       ]
     }
+
   ])
   return (
     <div className="App">
