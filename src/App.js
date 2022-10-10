@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import QuizDetail from './Components/QuizDetail/QuizDetail';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Error from './Components/Error/Error';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <Error></Error>,
       children: [
         {
           path: '/home',
@@ -45,19 +47,12 @@ function App() {
           path: '/quiz/:quizId',
           loader: async ({ params }) => {
             // console.log(params);
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}
-
-            `)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
           element: <QuizDetail></QuizDetail>
         }
       ]
-    },
-    {
-      path: '*',
-      element: <div>Route not found</div>
     }
-
   ])
   return (
     <div className="App">
