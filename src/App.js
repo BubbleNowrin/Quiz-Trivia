@@ -7,6 +7,8 @@ import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import Header from './Components/Header/Header';
 import QuizDetail from './Components/QuizDetail/QuizDetail';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -16,10 +18,13 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
-        // {
-        //   path: '/home',
-        //   element: <Header></Header>
-        // },
+        {
+          path: '/home',
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
+          element: <Quizzes></Quizzes>
+        },
         {
           path: '/',
           loader: async () => {
@@ -27,6 +32,7 @@ function App() {
           },
           element: <Quizzes></Quizzes>
         },
+
         {
           path: '/statistics',
           element: <Statistics> </Statistics>
@@ -56,6 +62,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer position='top-center' />
     </div>
   );
 }

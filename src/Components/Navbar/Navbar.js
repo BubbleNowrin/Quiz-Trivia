@@ -26,9 +26,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div>
-                <Header></Header>
-            </div>
         </div>
     );
 };

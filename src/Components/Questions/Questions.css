@@ -3,3 +3,11 @@
     width: 25px;
 
 }
+
+.custom {
+    cursor: pointer;
+}
+
+.custom:hover {
+    color: orangered;
+}
