@@ -5,12 +5,12 @@ import thinking from '../../images/thinking.png'
 
 const Header = () => {
     return (
-        <div className='d-flex align-items-center justify-content-between'>
-            <div className='w-50 font-5xl'>
-                <p>Take the Quiz,Get more Knowledge</p>
+        <div className='d-flex align-items-center justify-content-between bg-light'>
+            <div className='w-50 fs-2 fw-bold'>
+                <p><span className='text-warning ms-5'>Take the Quiz,</span> Get more Knowledge.</p>
             </div>
             <div className='w-50'>
-                <img className='img-fluid w-50' src={thinking} alt="" />
+                <img className='img-fluid w-75' src={thinking} alt="" />
             </div>
 
         </div>
