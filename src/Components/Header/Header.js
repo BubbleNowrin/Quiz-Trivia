@@ -1,31 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import download from '../../images/download.png';
+import header from '../../images/header.webp';
+import thinking from '../../images/thinking.png'
 
 const Header = () => {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg bg-light">
-                <div className="container">
-                    <Link className="navbar-brand fs-3 fw-semibold" to={'/'}>Quiz Trivia</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto ">
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to={'/'}>Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to={'/statistics'}>Statistics</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to={'/blog'}>Blog</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        <div className='d-flex align-items-center justify-content-between'>
+            <div className='w-50 font-5xl'>
+                <p>Take the Quiz,Get more Knowledge</p>
+            </div>
+            <div className='w-50'>
+                <img className='img-fluid w-50' src={thinking} alt="" />
+            </div>
+
         </div>
     );
 };
