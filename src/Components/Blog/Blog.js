@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <div className="card text-center mt-5 w-50 mx-auto">
+            <div className="card text-center mt-5 w-75 mx-auto">
                 <div className="card-header fw-bold fs-4">
                     What is the purpose of React router?
                 </div>
@@ -12,7 +12,7 @@ const Blog = () => {
                 </div>
                 <div className="card-footer text-muted"></div>
             </div>
-            <div className="card text-center mt-5 w-50 mx-auto">
+            <div className="card text-center mt-5 w-75 mx-auto">
                 <div className="card-header fw-bold fs-4">
                     How does Context API work?
                 </div>
@@ -21,7 +21,7 @@ const Blog = () => {
                 </div>
                 <div className="card-footer text-muted"></div>
             </div>
-            <div className="card text-center mt-5 w-50 mx-auto">
+            <div className="card text-center mt-5 w-75 mx-auto">
                 <div className="card-header fw-bold fs-4">
                     Describe about 'useRef' hook.
                 </div>
