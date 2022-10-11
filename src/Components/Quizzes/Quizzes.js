@@ -12,7 +12,7 @@ const Quizzes = () => {
             <div>
                 <Header></Header>
             </div>
-            <div className="card-group mt-5 mx-3">
+            <div className="card-group mt-5 mx-4">
                 {
                     quizzes.map(quiz => <Quiz key={quiz.id} quiz={quiz}></Quiz>)
                 }
