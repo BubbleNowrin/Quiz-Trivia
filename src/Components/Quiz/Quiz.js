@@ -8,7 +8,7 @@ const Quiz = ({ quiz }) => {
     // console.log(quiz);
     return (
 
-        <div className="card">
+        <div className="card vw-100">
             <img src={logo} className="card-img-top img-fluid bg-light" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>

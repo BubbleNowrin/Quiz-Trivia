@@ -9,7 +9,7 @@ const Header = () => {
                     <p><span className='text-warning'>Take the Quiz,<br />
                     </span> <span><small>Get more Knowledge.</small></span></p>
                 </div>
-                <div className='w-100'>
+                <div className='w-100 ms-5'>
                     <img className='img-fluid w-75' src={thinking} alt="" />
                 </div>
             </div>

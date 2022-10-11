@@ -20,8 +20,8 @@ const Questions = ({ question }) => {
         }
     }
     return (
-        <div>
-            <div className="card text-center w-50 mx-auto mt-5">
+        <div className='mx-auto w-75'>
+            <div className="card text-center w-100 mt-5">
                 <div className='d-flex justify-content-between'>
                     <div>
 
@@ -34,11 +34,11 @@ const Questions = ({ question }) => {
 
 
                 <div className="card-body">
-                    <h5 className="card-title">{question.question}</h5>
+                    <h5 className="card-title">Que: {question.question}</h5>
                     <p className="card-text">
 
                         {
-                            options.map((option, _idx) => <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-50 mx-auto p-4 mb-2 rounded bg-light custom'>{option}</li>)
+                            options.map((option, _idx) => <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-75 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>)
                         }
 
                     </p>
