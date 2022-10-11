@@ -38,7 +38,7 @@ const Questions = ({ question }) => {
                     <p className="card-text">
 
                         {
-                            options.map((option, _idx) => <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-75 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>)
+                            options.map((option, _idx) => <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-100 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>)
                         }
 
                     </p>
