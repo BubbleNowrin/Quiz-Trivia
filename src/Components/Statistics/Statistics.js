@@ -10,7 +10,7 @@ const Statistics = () => {
     const quizzes = quizzesData.data;
     // console.log(quizzes);
     return (
-        <div className='d-flex flex-column flex-lg-row justify-content-center align-items-center'>
+        <div className='d-flex flex-column flex-lg-row justify-content-center align-items-center min-vh-100'>
             <div className='mt-5 me-3'>
                 <AreaChart width={350} height={250} data={quizzes}
                     margin={{ top: 50, right: 20, left: 5, bottom: 0 }}>
