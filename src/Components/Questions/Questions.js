@@ -13,12 +13,15 @@ const Questions = ({ question }) => {
     }
 
     const checkAnswer = (event) => {
+
         if (event === correctAnswer) {
-            toast.success('Answer is Correct!', { autoClose: 2000 })
+            toast.success('Answer is Correct!', { autoClose: 2000 });
+
         } else {
             toast.error('Answer is wrong', { autoClose: 2000 });
         }
     }
+
     return (
         <div className='mx-auto w-75'>
             <div className="card text-center w-100 mt-5">
@@ -38,9 +41,10 @@ const Questions = ({ question }) => {
                     <p className="card-text">
 
                         {
-                            options.map((option, _idx) => <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-100 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>)
+                            options.map((option, _idx) =>
+                                <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-100 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>
+                            )
                         }
-
 
                     </p>
                 </div>

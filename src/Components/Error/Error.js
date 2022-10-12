@@ -14,7 +14,7 @@ const Error = () => {
                 <Navbar></Navbar>
             </div>
             <div>
-                <img src={errorText} alt="" />
+                <img className='w-25' src={errorText} alt="" />
                 <h2>{error.status}</h2>
                 <p className='text-danger'>{error.statusText}</p>
             </div>

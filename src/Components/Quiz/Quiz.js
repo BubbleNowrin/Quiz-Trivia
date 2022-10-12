@@ -16,7 +16,7 @@ const Quiz = ({ quiz }) => {
             </div>
             <Link to={`/quiz/${id}`}>
                 <button className='btn btn-warning text-white fw-bold m-4'>
-                    Take The quiz
+                    Take The Quiz
                     <ArrowLongRightIcon className='w-25' />
                 </button>
             </Link>
