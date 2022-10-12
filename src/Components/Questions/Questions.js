@@ -12,9 +12,9 @@ const Questions = ({ question }) => {
         toast.info(answer);
     }
 
-    const checkAnswer = (event) => {
+    const checkAnswer = ({ option }) => {
 
-        if (event === correctAnswer) {
+        if (option === correctAnswer) {
             toast.success('Answer is Correct!', { autoClose: 2000 });
 
         } else {
@@ -42,7 +42,7 @@ const Questions = ({ question }) => {
 
                         {
                             options.map((option, _idx) =>
-                                <li key={_idx} onClick={(e) => checkAnswer(e.target.innerText)} className='border w-100 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>
+                                <li key={_idx} onClick={() => checkAnswer({ option })} className='border w-100 mx-auto p-4 mb-2 mt-3 rounded bg-light custom'>{option}</li>
                             )
                         }
 
